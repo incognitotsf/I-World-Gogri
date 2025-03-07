@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I World Gogri - Your Digital Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">I World Gogri</div>
+            <div class="nav-right">
+                <div class="theme-toggle-wrapper">
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round">
+                            <span class="slider-icon light">☀️</span>
+                            <span class="slider-icon dark">🌙</span>
+                        </span>
+                    </label>
+                </div>
+                <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to I World Gogri</h1>
+            <p>Your Premium Digital Services Hub</p>
+            <a href="#services" class="cta-button">Explore Our Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <a href="services/ticket-booking.html" class="service-card">
+                    <i class="icon">🎫</i>
+                    <h3>Ticket Booking</h3>
+                    <p>All types of ticket booking services - Train, Bus, Flight & more</p>
+                </a>
+                <a href="services/govt-documents.html" class="service-card">
+                    <i class="icon">🪪</i>
+                    <h3>Government Documents</h3>
+                    <p>Aadhar Card, PAN Card, and Driving License assistance</p>
+                </a>
+                <a href="services/property-documentation.html" class="service-card">
+                    <i class="icon">📋</i>
+                    <h3>Property Documentation</h3>
+                    <p>Professional assistance with property-related documents</p>
+                </a>
+                <a href="services/form-filling.html" class="service-card">
+                    <i class="icon">📝</i>
+                    <h3>Online Form Filling</h3>
+                    <p>Professional assistance with all types of online forms</p>
+                </a>
+                <a href="services/printing.html" class="service-card">
+                    <i class="icon">🖨️</i>
+                    <h3>Printing Services</h3>
+                    <p>Color & B/W printing solutions</p>
+                </a>
+                <a href="services/digital.html" class="service-card">
+                    <i class="icon">📱</i>
+                    <h3>Digital Services</h3>
+                    <p>Scanning, photocopying & more</p>
+                </a>
+            </div>
+
+            <!-- Service Modals -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <div id="modal-ticket" class="modal-section">
+                        <h2>🎫 Ticket Booking Services</h2>
+                        <div class="modal-details">
+                            <h3>Available Booking Services:</h3>
+                            <ul>
+                                <li><strong>Train Tickets:</strong>
+                                    <ul>
+                                        <li>IRCTC authorized booking</li>
+                                        <li>Tatkal booking assistance</li>
+                                        <li>PNR status check</li>
+                                        <li>Seat availability check</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Bus Tickets:</strong>
+                                    <ul>
+                                        <li>Inter-state bus bookings</li>
+                                        <li>Local bus passes</li>
+                                        <li>Multiple bus operators</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Flight Tickets:</strong>
+                                    <ul>
+                                        <li>Domestic and International flights</li>
+                                        <li>Best price comparison</li>
+                                        <li>Web check-in assistance</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="modal-govt" class="modal-section">
+                        <h2>🪪 Government Document Services</h2>
+                        <div class="modal-details">
+                            <h3>Document Assistance:</h3>
+                            <ul>
+                                <li><strong>Aadhar Card Services:</strong>
+                                    <ul>
+                                        <li>New Aadhar card registration</li>
+                                        <li>Aadhar card update/correction</li>
+                                        <li>Aadhar linking assistance</li>
+                                    </ul>
+                                </li>
+                                <li><strong>PAN Card Services:</strong>
+                                    <ul>
+                                        <li>New PAN card application</li>
+                                        <li>PAN correction/update</li>
+                                        <li>PAN-Aadhar linking</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Driving License:</strong>
+                                    <ul>
+                                        <li>Learning License application</li>
+                                        <li>Permanent License application</li>
+                                        <li>License renewal</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="modal-property" class="modal-section">
+                        <h2>📋 Property Documentation</h2>
+                        <div class="modal-details">
+                            <h3>Property-Related Services:</h3>
+                            <ul>
+                                <li><strong>Property Registration:</strong>
+                                    <ul>
+                                        <li>Sale deed preparation</li>
+                                        <li>Registration assistance</li>
+                                        <li>Document verification</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Property Records:</strong>
+                                    <ul>
+                                        <li>Land record verification</li>
+                                        <li>Property tax documents</li>
+                                        <li>Mutation assistance</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Legal Documentation:</strong>
+                                    <ul>
+                                        <li>Agreement drafting</li>
+                                        <li>NOC processing</li>
+                                        <li>Legal verification</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="modal-form" class="modal-section">
+                        <h2>📝 Online Form Filling</h2>
+                        <div class="modal-details">
+                            <h3>Form Filling Services:</h3>
+                            <ul>
+                                <li><strong>Educational Forms:</strong>
+                                    <ul>
+                                        <li>School/College admissions</li>
+                                        <li>Scholarship applications</li>
+                                        <li>Exam registrations</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Government Forms:</strong>
+                                    <ul>
+                                        <li>Passport applications</li>
+                                        <li>Voter ID registration</li>
+                                        <li>Employment registration</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Other Forms:</strong>
+                                    <ul>
+                                        <li>Bank account opening</li>
+                                        <li>Insurance forms</li>
+                                        <li>Job applications</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="modal-print" class="modal-section">
+                        <h2>🖨️ Printing Services</h2>
+                        <div class="modal-details">
+                            <h3>Available Printing Services:</h3>
+                            <ul>
+                                <li><strong>Document Printing:</strong>
+                                    <ul>
+                                        <li>Black & White printing</li>
+                                        <li>Color printing</li>
+                                        <li>High-quality photo printing</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Special Printing:</strong>
+                                    <ul>
+                                        <li>Certificate printing</li>
+                                        <li>Resume printing</li>
+                                        <li>Project report printing</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Bulk Printing:</strong>
+                                    <ul>
+                                        <li>Document sets</li>
+                                        <li>Business cards</li>
+                                        <li>Brochures and flyers</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="pricing-note">* Competitive prices for all printing services</p>
+                        </div>
+                    </div>
+
+                    <div id="modal-digital" class="modal-section">
+                        <h2>📱 Digital Services</h2>
+                        <div class="modal-details">
+                            <h3>Digital Solutions:</h3>
+                            <ul>
+                                <li><strong>Scanning Services:</strong>
+                                    <ul>
+                                        <li>Document scanning</li>
+                                        <li>Photo scanning</li>
+                                        <li>High-resolution scanning</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Photocopying:</strong>
+                                    <ul>
+                                        <li>Regular copies</li>
+                                        <li>Color photocopying</li>
+                                        <li>Document resizing</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Other Services:</strong>
+                                    <ul>
+                                        <li>Document lamination</li>
+                                        <li>Spiral binding</li>
+                                        <li>CD/DVD writing</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="english-content">
+                    <p>Welcome to I World Gogri, your one-stop destination for all digital and documentation services. Owned and managed by Imran, our cyber café is dedicated to providing fast, reliable, and hassle-free solutions for your everyday needs.</p>
+                </div>
+                <div class="hindi-content">
+                    <p>चाहे आपको Train, Bus, या Flight की टिकट बुक करनी हो या फिर Aadhar Card, PAN Card, और Driving License से जुड़ी कोई सहायता चाहिए हो, हम हर कदम पर आपके साथ हैं। साथ ही, हम प्रॉपर्टी दस्तावेज़ और ऑनलाइन फॉर्म भरने में भी प्रोफेशनल सहायता प्रदान करते हैं, जिससे आपका समय और मेहनत दोनों बचें।</p>
+                    <p>इसके अलावा, हमारी प्रिंटिंग और डिजिटल सेवाओं में आपको कलर और B/W प्रिंटिंग, स्कैनिंग, और फोटोकॉपी जैसी सुविधाएँ भी मिलेंगी। हमारा लक्ष्य है कि आपको हर डिजिटल सेवा एक ही जगह पर तेज़, आसान और किफायती दामों में मिले।</p>
+                    <p>तो आज ही आएँ I World Gogri पर और बेहतरीन, भरोसेमंद सेवाओं का लाभ उठाएँ! 🚀</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="icon">📍</i>
+                    <p>CJ9J+34M, Gogri Rd, Gobindpur, Bihar 851202</p>
+                </div>
+                <div class="info-item">
+                    <i class="icon">📞</i>
+                    <p>+918406899770</p>
+                </div>
+                <div class="info-item">
+                    <i class="icon">✉️</i>
+                    <p>imrangogri@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <p class="form-description">Send us an email directly</p>
+                <form id="contactForm" onsubmit="return sendEmail(event)">
+                    <div class="form-group">
+                        <label for="message">Tell us about your request</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your phone number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree with the Terms & Conditions and the Privacy & Cookies Policy of UENI and any applicable Terms and Conditions of Online Digital Cyber Cafe.</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 I World Gogri. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
